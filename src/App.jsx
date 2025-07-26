@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Landing from './pages/Landing'
 import './App.css'
+import './index.css';
 
 function App() {
 
