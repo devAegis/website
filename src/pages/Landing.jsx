@@ -27,7 +27,7 @@ function Landing() {
           
           <div className="relative z-10 container h-full mx-auto px-4 flex flex-col justify-center items-center text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Welcome to <span className="text-blue-400">Dev Aegis</span>
+              Welcome to <span className="text-gray-500">Dev Aegis</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
               Your shield in the digital world. Building innovative solutions for modern businesses.
@@ -53,20 +53,31 @@ function Landing() {
 
         
  {/* Hero Banner */}
-        <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-4">
-          <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
-            {/* Text Content */}
+        <section className="relative py-20 px-4 h-[100vh] text-white overflow-hidden">
+          {/* Background Image with Gradient Overlay */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661783512537-95fd8d054fa7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQwfHx8ZW58MHx8fHx8" // Replace with your image path
+              alt="Background"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r "></div>
+          </div>
+
+          {/* Content Container */}
+          <div className="container my-auto flex flex-col md:flex-row gap-12 relative z-10">
+            {/* Text Content (unchanged) */}
             <div className="md:w-1/2 space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              <h1 className="text-7xl  font-bold leading-tight">
                 Digital Armor for Your Business
               </h1>
-              <p className="text-xl text-blue-100">
+              <p className="text-xl text-gray-100">
                 Dev Aegis provides cutting-edge web, app, and AI solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
                   to="/contact" 
-                  className="bg-white text-blue-800 hover:bg-blue-100 px-8 py-3 rounded-lg font-semibold text-center transition-all duration-300"
+                  className="bg-white text-gray-800 hover:bg-blue-100 px-8 py-3 rounded-lg font-semibold text-center transition-all duration-300"
                 >
                   Get Free Consultation
                 </Link>
@@ -77,15 +88,6 @@ function Landing() {
                   Explore Services
                 </Link>
               </div>
-            </div>
-            
-            {/* Visual Element */}
-            <div className="md:w-1/2">
-              <img 
-                src="/hero-illustration.svg" 
-                alt="Security shield protecting digital assets" 
-                className="w-full max-w-md mx-auto"
-              />
             </div>
           </div>
         </section>
