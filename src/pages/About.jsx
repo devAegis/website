@@ -36,7 +36,7 @@ const AboutPage = () => {
               <h2 className="text-3xl font-bold">Our Story</h2>
             </div>
             <p className="text-lg text-gray-600 mb-4">
-              Founded in 2020, Dev Aegis emerged from a simple idea: technology should empower, not complicate. 
+              Founded in 2025, Dev Aegis emerged from a simple idea: technology should empower, not complicate. 
               What began as a small team of security-focused developers has grown into a trusted partner for 
               businesses worldwide.
             </p>
@@ -47,7 +47,7 @@ const AboutPage = () => {
           </div>
           <div className="md:w-1/2">
             <img 
-              src="/about-story.jpg" 
+              src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D" 
               alt="Our team working together" 
               className="rounded-xl shadow-lg w-full"
             />
