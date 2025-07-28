@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import ServicesSection from '../components/ServicesSection';
+
 
 
 function Landing() {
@@ -41,6 +43,15 @@ function Landing() {
             
           </div>
         </section>
+
+        <section>
+           <ServicesSection />
+        </section>
+
+
+
+
+        
  {/* Hero Banner */}
         <section className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-4">
           <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
