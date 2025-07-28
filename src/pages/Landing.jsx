@@ -8,7 +8,7 @@ function Landing() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <main className="flex-grow">
+      <main className="flex-grow h-[100vh] bg-gray-100 flex items-center justify-center">
         <div className="container mx-auto p-4 py-16 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Welcome to <span className="text-blue-600">Dev Aegis</span>
