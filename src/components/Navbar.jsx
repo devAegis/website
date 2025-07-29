@@ -16,6 +16,7 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
+          <Link to="/" className="hover:text-blue-300 transition-colors">Home</Link>
           <Link to="/services" className="hover:text-blue-300 transition-colors">Services</Link>
           <Link to="/about" className="hover:text-blue-300 transition-colors">About</Link>
           <Link to="/contact" className="hover:text-blue-300 transition-colors">Contact</Link>
@@ -37,6 +38,13 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-700 px-4 py-2">
           <div className="flex flex-col space-y-3">
+            <Link 
+              to="/" 
+              className="hover:text-blue-300 transition-colors py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
             <Link 
               to="/services" 
               className="hover:text-blue-300 transition-colors py-2"
