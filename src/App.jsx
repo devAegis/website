@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import assets and page components
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import viteLogo from '/vite.svg'
 import Landing from './pages/Landing'
 import About from './pages/About'
 import Contact from './pages/Contact'
