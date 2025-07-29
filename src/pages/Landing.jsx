@@ -68,42 +68,47 @@ function Landing() {
 
         
  {/* Hero Banner */}
-        <section className="relative py-20 px-4 h-[100vh] text-white overflow-hidden">
+        <section className="relative py-12 md:py-20 px-4 min-h-screen flex items-center text-white overflow-hidden">
           {/* Background Image with Gradient Overlay */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://plus.unsplash.com/premium_photo-1661783512537-95fd8d054fa7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQwfHx8ZW58MHx8fHx8" // Replace with your image path
+              src="https://plus.unsplash.com/premium_photo-1661783512537-95fd8d054fa7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQwfHx8ZW58MHx8fHx8"
               alt="Background"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r "></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
           </div>
 
           {/* Content Container */}
-          <div className="container my-auto flex flex-col md:flex-row gap-12 relative z-10">
-            {/* Text Content (unchanged) */}
-            <div className="md:w-1/2 space-y-6">
-              <h1 className="text-7xl  font-bold leading-tight">
+          <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12 relative z-10">
+            {/* Text Content */}
+            <div className="w-full md:w-1/2 space-y-4 sm:space-y-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 Digital Armor for Your Business
               </h1>
-              <p className="text-xl text-gray-100">
+              <p className="text-lg sm:text-xl text-gray-100 max-w-lg">
                 Dev Aegis provides cutting-edge web, app, and AI solutions.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link 
                   to="/contact" 
-                  className="bg-white text-gray-800 hover:bg-blue-100 px-8 py-3 rounded-lg font-semibold text-center transition-all duration-300"
+                  className="bg-white text-gray-800 hover:bg-blue-100 px-6 py-3 sm:px-8 sm:py-3 rounded-lg font-semibold text-center transition-all duration-300 text-sm sm:text-base"
                 >
                   Get Free Consultation
                 </Link>
                 <Link 
                   to="/services" 
-                  className="border-2 border-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold text-center transition-all duration-300"
+                  className="border-2 border-white hover:bg-white/10 px-6 py-3 sm:px-8 sm:py-3 rounded-lg font-semibold text-center transition-all duration-300 text-sm sm:text-base"
                 >
                   Explore Services
                 </Link>
               </div>
             </div>
+
+            {/* Optional Image/Graphic Section - Add if needed */}
+            {/* <div className="w-full md:w-1/2">
+              <img src="/your-graphic.png" alt="Digital Solutions" className="w-full h-auto" />
+            </div> */}
           </div>
         </section>
 
@@ -111,9 +116,6 @@ function Landing() {
 
         {/* Color swatches demo */}
         <div className="flex space-x-4 justify-center my-12">
-          <div className='w-[30px] h-[30px] bg-[#3C9BCE] rounded'></div>
-          <div className='w-[30px] h-[30px] bg-[#69C4DC] rounded'></div>
-          <div className='w-[30px] h-[30px] bg-[#93FFA7] rounded'></div>
         </div>
       </main>
       
