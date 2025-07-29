@@ -36,7 +36,7 @@ function Landing() {
             
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 justify-center">
               <button className="
-                border-2 border-white hover:border-blue-400 hover:text-blue-400 
+                border-2 border-white hover:border-gray-500 hover:text-gray-500
                 text-white px-6 py-3 sm:px-8 sm:py-3 
                 w-full sm:w-auto min-w-[200px]
                 rounded-lg text-lg font-semibold 
@@ -46,12 +46,12 @@ function Landing() {
               </button>
               
               <button className="
-                border-2 border-white hover:border-blue-400 hover:text-blue-400 
+                border-2 border-white hover:border-gray-500 hover:text-gray-500
                 text-white px-6 py-3 sm:px-8 sm:py-3 
                 w-full sm:w-auto min-w-[200px]
                 rounded-lg text-lg font-semibold 
                 transition-colors duration-300
-                bg-blue-600 hover:bg-blue-700 
+                
               ">
                 Contact us today
               </button>
